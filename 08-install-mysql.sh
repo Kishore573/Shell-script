@@ -21,7 +21,11 @@ else
 
 echo "The installation of mysql is successfull"
 
+fi 
+
 yum install postfix -y
+
+
 
 if [ $? -ne 0 ]
 
@@ -32,3 +36,4 @@ else
 
 echo "The installation of postfix is successfull"
 
+fi
