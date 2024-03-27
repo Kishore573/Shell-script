@@ -16,7 +16,7 @@ if [ $? -ne 0 ]
 
 then
 echo "The mysql installation is not successfull"
-
+exit 1
 else
 
 echo "The installation of mysql is successfull"
@@ -31,7 +31,7 @@ if [ $? -ne 0 ]
 
 then
 echo "The postfix installation is not successfull"
-
+exit1
 else
 
 echo "The installation of postfix is successfull"
