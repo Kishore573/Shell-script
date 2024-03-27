@@ -10,3 +10,5 @@ echo "The $NUMBER is greater than 10"
 else
 
 echo "The $NUMBER is not greater than 10"
+
+fi
