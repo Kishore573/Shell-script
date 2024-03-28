@@ -16,6 +16,7 @@ then
 echo "$2 Installation is Failure"
 else
 echo "$2 Installation is Success"
+fi 
 }
 
 for i in $@
