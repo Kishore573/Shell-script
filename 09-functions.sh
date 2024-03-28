@@ -1,6 +1,5 @@
 #!/bin/bash
 
-USERID=$(id -u)
 DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/&SCRIPT_NAME-$DATE.log 
@@ -20,7 +19,7 @@ echo -e "The $2 ...... $E SUCCESS $N"
 fi 
 }
 
-
+USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
 echo "Please do installation with root user"
