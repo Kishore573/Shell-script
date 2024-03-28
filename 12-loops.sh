@@ -4,7 +4,9 @@ DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGDIR=/home/centos/shell-script-logs
 USERID=$(id -u)
-LOGFILE=$LOGSDIR/$0-$DATE.log
+LOGFILE=$LOGDIR/$0-$DATE.log
+
+
 
 if [ $USERID -ne 0 ]
 then
