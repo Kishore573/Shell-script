@@ -2,7 +2,7 @@
 
 DATE=$(date +%F)
 SCRIPT_NAME=$0
-LOGFILE=/tmp/&SCRIPT_NAME-$DATE.log 
+LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log 
 
 R="\e[31m"
 G="\e[32m"
@@ -30,9 +30,9 @@ fi
 
 yum install mysql -y &>>$LOGFILE
 
-VALIDATE $? "MYSQL installation is Success"
+VALIDATE $? "Installing MYSQL"
 
 yum install postfix -y &>>$LOGFILE
 
-VALIDATE $? "postfix installation is Success"
+VALIDATE $? "Installing postfix"
 
