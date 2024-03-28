@@ -15,7 +15,7 @@ then
 echo -e "The $2 .....$R FAILURE $N"
 exit 1
 else
-echo -e "The $2 ...... $E SUCCESS $N"
+echo -e "The $2 ...... $G SUCCESS $N"
 fi 
 }
 
